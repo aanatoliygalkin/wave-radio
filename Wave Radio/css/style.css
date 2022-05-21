@@ -39,21 +39,21 @@ html {
 }
 
 :root {
-  --colorGray: #A1A6B4;
-  --colorWhite: #FFFFFF;
-  --colorBlack: #121723;
-  --colorLight: #E6E8EC;
-  --colorPrimary: #6D31EE;
-  --colorPrimaryLight: #AA9DFA;
-  --colorPrimaryShade: #4F28A5;
-  --colorPromo: #F0D288;
-  --colorPromoShade: #BB973E;
-  --colorLightBlack: #292E39;
-  --colorShadeGray: #D2D5DD;
-  --colorBlue: #0039A6;
-  --colorDarkBlue: #012169;
-  --colorDarkRed: #C8102E;
-  --colorRed: #D52B1E;
+  --color-gray: #A1A6B4;
+  --color-white: #FFFFFF;
+  --color-black: #121723;
+  --color-light: #E6E8EC;
+  --color-primary: #6D31EE;
+  --color-primary-light: #AA9DFA;
+  --color-primary-shade: #4F28A5;
+  --color-promo: #F0D288;
+  --color-promo-shade: #BB973E;
+  --color-light-black: #292E39;
+  --color-shade-gray: #D2D5DD;
+  --color-blue: #0039A6;
+  --color-dark-blue: #012169;
+  --color-dark-red: #C8102E;
+  --color-red: #D52B1E;
 }
 
 *:focus-visible {
@@ -61,7 +61,7 @@ html {
 }
 
 a {
-  color: var(--colorPrimary);
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -78,7 +78,7 @@ img {
   overflow: hidden;
 }
 
-.h2-empty {
+.h2--empty {
   display: none;
 }
 
@@ -94,7 +94,7 @@ img {
 
 body {
   font-family: 'MullerRegular', sans-serif;
-  background-color: var(--colorWhite);
+  background-color: var(--color-white);
   font-weight: 400;
 }
 
@@ -118,38 +118,38 @@ button {
 }
 
 .btn {
-  background-color: var(--colorPrimary);
+  background-color: var(--color-primary);
   padding: 25px 54px;
   font-family: 'MullerMedium';
   font-size: 20px;
   line-height: 20px;
-  color: var(--colorWhite);
+  color: var(--color-white);
   text-align: center;
   max-width: 245px;
   border-radius: 40px;
 }
 
 .btn-transparent {
-  border: 2px solid var(--colorPrimary);
+  border: 2px solid var(--color-primary);
   padding: 25px 52px;
   font-family: 'MullerMedium';
   font-size: 20px;
   line-height: 20px;
-  color: var(--colorPrimary);
+  color: var(--color-primary);
   text-align: center;
   max-width: 246px;
   border-radius: 40px;
 }
 
 .btn-black {
-  border: 2px solid var(--colorBlack);
+  border: 2px solid var(--color-black);
   background-color: transparent;
   padding: 12px 32px;
   cursor: pointer;
   font-family: 'MullerMedium';
   font-size: 16px;
   line-height: 16px;
-  color: var(--colorBlack);
+  color: var(--color-black);
   text-align: center;
   max-width: 104px;
   border-radius: 77px;
@@ -164,8 +164,8 @@ button {
 /*Header*/
 
 .section-header-bottom {
-  border-top: 1px solid var(--colorGray);
-  border-bottom: 1px solid var(--colorGray);
+  border-top: 1px solid var(--color-gray);
+  border-bottom: 1px solid var(--color-gray);
 }
 
 .section-header-logo {
@@ -201,13 +201,13 @@ button {
 .header-nav-elem {
   font-size: 20px;
   line-height: 20px;
-  color: var(--colorBlack);
+  color: var(--color-black);
 }
 
 .header-nav-bottom-elem {
   font-size: 16px;
   line-height: 16px;
-  color: var(--colorBlack);
+  color: var(--color-black);
 }
 
 .header-nav-elem:not(:last-child) {
@@ -227,7 +227,7 @@ button {
 }
 
 .header-play-main {
-  border-left: 1px solid var(--colorGray);
+  border-left: 1px solid var(--color-gray);
   align-items: center;
 }
 
@@ -236,7 +236,7 @@ button {
 }
 
 .header-play-top {
-  color: var(--colorGray);
+  color: var(--color-gray);
   margin-bottom: 5px;
   font-size: 12px;
   line-height: 12px;
@@ -249,7 +249,7 @@ button {
 
 .header-play {
   flex-direction: column;
-  border-right: 1px solid var(--colorGray);
+  border-right: 1px solid var(--color-gray);
 }
 
 .header-play-bottom {
@@ -279,7 +279,7 @@ button {
 .header-category {
   justify-content: center;
   width: 46px;
-  background-color: var(--colorGray);
+  background-color: var(--color-gray);
 }
 
 .header-category-text {
@@ -296,7 +296,7 @@ button {
 .header-category-span {
   font-size: 12px;
   line-height: 16px;
-  color: var(--colorGray);
+  color: var(--color-gray);
 }
 
 .header-search {
@@ -340,11 +340,11 @@ button {
   max-width: 278px;
   width: 100%;
   transform: translate(-100%, 0);
-  border-bottom: 1px solid var(--colorPrimary);
+  border-bottom: 1px solid var(--color-primary);
   top: 20px;
   padding: 10px;
   padding-bottom: 2px;
-  background-color: var(--colorWhite);
+  background-color: var(--color-white);
   transition: transform .2s, top .2s ease-in-out, opacity .1s ease-in-out, visibility .1s ease-in-out .2s;
   visibility: hidden;
 }
@@ -378,7 +378,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  color: var(--colorGray);
+  color: var(--color-gray);
 }
 
 .form__input:focus-visible {
@@ -420,7 +420,7 @@ button {
   font-family: 'MullerRegular';
   font-size: 60px;
   line-height: 100%;
-  color: var(--colorBlack);
+  color: var(--color-black);
 }
 
 .hero-descr {
@@ -428,13 +428,13 @@ button {
   margin-bottom: 45px;
   font-size: 16px;
   line-height: 150%;
-  color: var(--colorBlack);
+  color: var(--color-black);
 }
 
 /*Podcasts*/
 
 .section-podcasts {
-  background-color: var(--colorGray);
+  background-color: var(--color-gray);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -466,7 +466,7 @@ button {
   flex-direction: column;
   width: 540px;
   min-height: 140px;
-  background-color: var(--colorWhite);
+  background-color: var(--color-white);
   margin-bottom: 30px;
 }
 
@@ -528,7 +528,7 @@ button {
 .podcasts-line {
   width: 428px;
   align-self: flex-end;
-  border-top: 1px solid var(--colorGray);
+  border-top: 1px solid var(--color-gray);
   height: 1px;
 }
 
@@ -548,7 +548,7 @@ button {
 
 .podcasts-card1::after {
   content: "14 июня";
-  color: var(--colorBlack);
+  color: var(--color-black);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -560,12 +560,12 @@ button {
   background-position: center;
   background-size: 51px 16px;
   background-repeat: no-repeat;
-  background-color: var(--colorGray);
+  background-color: var(--color-gray);
 }
 
 .podcasts-card2::after {
   content: "11 июня";
-  color: var(--colorBlack);
+  color: var(--color-black);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -577,12 +577,12 @@ button {
   background-position: center;
   background-size: 51px 16px;
   background-repeat: no-repeat;
-  background-color: var(--colorGray);
+  background-color: var(--color-gray);
 }
 
 .podcasts-card3::after {
   content: "8 июня";
-  color: var(--colorBlack);
+  color: var(--color-black);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -594,12 +594,12 @@ button {
   background-position: center;
   background-size: 51px 16px;
   background-repeat: no-repeat;
-  background-color: var(--colorGray);
+  background-color: var(--color-gray);
 }
 
 .podcasts-card4::after {
   content: "5 июня";
-  color: var(--colorBlack);
+  color: var(--color-black);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -611,12 +611,12 @@ button {
   background-position: center;
   background-size: 51px 16px;
   background-repeat: no-repeat;
-  background-color: var(--colorGray);
+  background-color: var(--color-gray);
 }
 
 .podcasts-card5::after {
   content: "2 июня";
-  color: var(--colorBlack);
+  color: var(--color-black);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -628,12 +628,12 @@ button {
   background-position: center;
   background-size: 51px 16px;
   background-repeat: no-repeat;
-  background-color: var(--colorGray);
+  background-color: var(--color-gray);
 }
 
 .podcasts-card6::after {
   content: "28 мая";
-  color: var(--colorBlack);
+  color: var(--color-black);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -645,12 +645,12 @@ button {
   background-position: center;
   background-size: 51px 16px;
   background-repeat: no-repeat;
-  background-color: var(--colorGray);
+  background-color: var(--color-gray);
 }
 
 .podcasts-card7::after {
   content: "22 мая";
-  color: var(--colorBlack);
+  color: var(--color-black);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -662,12 +662,12 @@ button {
   background-position: center;
   background-size: 51px 16px;
   background-repeat: no-repeat;
-  background-color: var(--colorGray);
+  background-color: var(--color-gray);
 }
 
 .podcasts-card8::after {
   content: "18 мая";
-  color: var(--colorBlack);
+  color: var(--color-black);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -679,7 +679,7 @@ button {
   background-position: center;
   background-size: 51px 16px;
   background-repeat: no-repeat;
-  background-color: var(--colorGray);
+  background-color: var(--color-gray);
 }
 
 .podcasts-btn {
@@ -698,20 +698,20 @@ button {
   margin-bottom: 8px;
   font-size: 12px;
   line-height: 12px;
-  color: var(--colorBlack);
+  color: var(--color-black);
 }
 
 .podcasts-card-title {
   margin-bottom: 4px;
   font-size: 20px;
   line-height: 20px;
-  color: var(--colorBlack);
+  color: var(--color-black);
 }
 
 .podcasts-author {
   font-size: 16px;
   line-height: 16px;
-  color: var(--colorGray);
+  color: var(--color-gray);
 }
 
 .podcasts-card:not(:nth-child(2n)) {
@@ -738,7 +738,7 @@ button {
 .podcasts-bottom-numb {
   font-size: 16px;
   line-height: 16px;
-  color: var(--colorGray);
+  color: var(--color-gray);
   transition-property: color;
   transition: 0.2s ease-in-out;
 }
@@ -751,7 +751,7 @@ button {
   display: none;
 }
 
-.podcasts-card-more-active {
+.podcasts-card-more--active {
   display: flex;
 }
 
@@ -773,10 +773,10 @@ button {
 .btn-black {
   position: relative;
   font-family: 'MullerMedium';
-  color: var(--colorBlack);
+  color: var(--color-black);
   font-size: 16px;
   line-height: 16px;
-  border: 2px solid var(--colorBlack);
+  border: 2px solid var(--color-black);
   background-color: transparent;
   padding: 12px 32px;
   max-width: 104px;
@@ -788,10 +788,10 @@ button {
 .btn-black-archive {
   position: relative;
   font-family: 'MullerMedium';
-  color: var(--colorBlack);
+  color: var(--color-black);
   font-size: 16px;
   line-height: 16px;
-  border: 2px solid var(--colorBlack);
+  border: 2px solid var(--color-black);
   background-color: transparent;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -820,7 +820,7 @@ button {
 .broadcasts-card {
   cursor: pointer;
   width: 255px;
-  border: 1px solid var(--colorGray);
+  border: 1px solid var(--color-gray);
   flex-direction: column;
   padding: 168px 20px 20px 16px;
   position: relative;
@@ -878,14 +878,14 @@ button {
   font-family: 'MullerMedium';
   font-size: 20px;
   line-height: 20px;
-  color: var(--colorBlack);
+  color: var(--color-black);
   margin-bottom: 4px;
 }
 
 .broadcasts-descr {
   font-size: 12px;
   line-height: 12px;
-  color: var(--colorGray);
+  color: var(--color-gray);
   margin-bottom: 20px;
 }
 
@@ -897,7 +897,7 @@ button {
   cursor: pointer;
   font-size: 16px;
   line-height: 16px;
-  color: var(--colorBlack);
+  color: var(--color-black);
   text-align: left;
   padding: 0;
   transition: color 0.2s ease-in-out;
@@ -929,16 +929,16 @@ button {
 .broadcasts-author {
   font-size: 16px;
   line-height: 16px;
-  color: var(--colorGray);
+  color: var(--color-gray);
   margin-bottom: 8px;
 }
 
 .broadcasts-author-item {
   font-size: 16px;
   line-height: 16px;
-  color: var(--colorBlack);
+  color: var(--color-black);
   width: 100%;
-  background-color: var(--colorGray);
+  background-color: var(--color-gray);
   padding: 12px;
 }
 
@@ -953,7 +953,7 @@ button {
 .broadcasts-p {
   font-size: 16px;
   line-height: 150%;
-  color: var(--colorGray);
+  color: var(--color-gray);
 }
 
 .broadcasts-select {
@@ -989,14 +989,14 @@ button {
   opacity: 1;
   font-size: 16px;
   line-height: 16px;
-  color: var(--colorBlack);
+  color: var(--color-black);
 }
 
 .choices__item.choices__item--choice.choices__item--selectable {
-  color: var(--colorGray);
+  color: var(--color-gray);
   font-size: 16px;
   line-height: 16px;
-  border-bottom: 1px solid var(--colorShadeGray);
+  border-bottom: 1px solid var(--color-shade-gray);
 }
 
 .choices__list--dropdown .choices__item--selectable {
@@ -1005,7 +1005,7 @@ button {
 
 .choices__list {
   border-top: none;
-  border-color: var(--colorShadeGray);
+  border-color: var(--color-shade-gray);
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted:after {
@@ -1054,7 +1054,7 @@ button {
 .section-guests {
   padding-top: 60px;
   padding-bottom: 100px;
-  background-color: var(--colorBlack);
+  background-color: var(--color-black);
 }
 
 .guests-media1024 {
@@ -1062,14 +1062,14 @@ button {
 }
 
 .guests-title {
-  color: var(--colorWhite);
+  color: var(--color-white);
   margin-bottom: 12px;
 }
 
 .guests-before-descr {
   font-size: 20px;
   line-height: 150%;
-  color: var(--colorGray);
+  color: var(--color-gray);
   margin-bottom: 8px;
 }
 
@@ -1077,7 +1077,7 @@ button {
   max-width: 825px;
   font-size: 20px;
   line-height: 160%;
-  color: var(--colorGray);
+  color: var(--color-gray);
   margin-bottom: 50px;
 }
 
@@ -1104,7 +1104,7 @@ button {
 }
 
 .guests-bottom-text {
-  color: var(--colorGray);
+  color: var(--color-gray);
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -1114,8 +1114,8 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid var(--colorGray);
-  border-bottom: 1px solid var(--colorGray);
+  border-top: 1px solid var(--color-gray);
+  border-bottom: 1px solid var(--color-gray);
   padding-top: 23px;
   padding-bottom: 24px;
   transition-property: color;
@@ -1127,7 +1127,7 @@ button {
   display: flex;
   justify-content: center;
   padding: 0;
-  border: 2px solid var(--colorGray);
+  border: 2px solid var(--color-gray);
   background-color: transparent;
   cursor: pointer;
   border-radius: 100%;
@@ -1147,7 +1147,7 @@ button {
   transition: color .2s ease-in-out;
   font-size: 20px;
   line-height: 20px;
-  color: var(--colorWhite);
+  color: var(--color-white);
   width: 82%;
 }
 
@@ -1158,7 +1158,7 @@ button {
 }
 
 .guests-top:focus-visible {
-  color: var(--colorPrimary);
+  color: var(--color-primary);
 }
 
 .guests-top:focus-visible {
@@ -1166,50 +1166,50 @@ button {
 }
 
 .guests-top:hover .guests-top__question {
-  color: var(--colorPrimaryLight);
+  color: var(--color-primary-light);
 }
 
 .guests-top:hover .guests-btn {
-  border-color: var(--colorPrimaryLight);
+  border-color: var(--color-primary-light);
 }
 
 .guests-top:hover .guests-btn svg path {
-  stroke: var(--colorPrimaryLight);
+  stroke: var(--color-primary-light);
 }
 
 .guests-item:active .guests-btn {
-  background-color: var(--colorPrimaryLight);
-  border-color: var(--colorPrimaryLight);
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
 }
 
 .guests-item:active .guests-btn svg path {
-  stroke: var(--colorWhite);
+  stroke: var(--color-white);
 }
 
 .guests-top:active .guests-top__question {
-  color: var(--colorPrimaryLight);
+  color: var(--color-primary-light);
 }
 
 
-.guests-top.ui-state-active {
-  border-color: var(--colorPrimaryLight);
+.guests-top.ui-state--active {
+  border-color: var(--color-primary-light);
 }
 
-.guests-top.ui-state-active .guests-btn {
+.guests-top.ui-state--active .guests-btn {
   transform: rotate(180deg);
   background-color: transparent;
-  border-color: var(--colorGray);
+  border-color: var(--color-gray);
 }
 
-.guests-top.ui-state-active .guests-btn svg path {
-  stroke: var(--colorGray);
+.guests-top.ui-state--active .guests-btn svg path {
+  stroke: var(--color-gray);
 }
 
-.guests-top.ui-state-active .guests-top__question {
-  color: var(--colorWhite);
+.guests-top.ui-state--active .guests-top__question {
+  color: var(--color-white);
 }
 
-.guests-top.ui-state-active+.guests-bottom {
+.guests-top.ui-state--active+.guests-bottom {
   position: relative;
   z-index: 2;
 }
@@ -1243,7 +1243,7 @@ button {
   background-image: url("../img/guests.jpg");
 }
 
-.guests-card-empty::before {
+.guests-card--empty::before {
   background-image: url("../img/empty.jpg");
 }
 
@@ -1270,7 +1270,7 @@ button {
   font-family: 'MullerMedium';
   font-size: 20px;
   line-height: 20px;
-  color: var(--colorWhite);
+  color: var(--color-white);
   margin: 0;
   margin-bottom: 8px;
 }
@@ -1278,7 +1278,7 @@ button {
 .guests-card-descr {
   font-size: 16px;
   line-height: 180%;
-  color: var(--colorGray);
+  color: var(--color-gray);
   margin-bottom: 40px;
 }
 
@@ -1290,23 +1290,23 @@ button {
   height: 150px;
 }
 
-.guests-bottom-item-button {
+.guests-bottom__item-button {
   margin-bottom: 14px;
 }
 
-.guests-bottom-item-button {
+.guests-bottom__item-button {
   text-align: left;
   padding: 0;
   border: none;
   background-color: transparent;
-  color: var(--colorWhite);
+  color: var(--color-white);
 }
 
 .guests-card {
   display: none;
 }
 
-.guests-card-active {
+.guests-card--active {
   display: block;
 }
 
@@ -1338,15 +1338,16 @@ button {
 .playlists-genre {
   font-size: 16px;
   line-height: 16px;
-  color: var(--colorGray);
+  color: var(--color-gray);
   margin-bottom: 8px;
 }
 
 .playlists-label {
+  cursor: pointer;
   align-self: center;
   font-size: 20px;
   line-height: 20px;
-  color: var(--colorBlack);
+  color: var(--color-black);
 }
 
 .playlists-radio-item:not(:last-child) {
@@ -1355,7 +1356,7 @@ button {
 
 .playlists-left-div {
   padding-bottom: 30px;
-  border-bottom: 1px solid var(--colorShadeGray);
+  border-bottom: 1px solid var(--color-shade-gray);
 }
 
 .playlists-limit {
@@ -1363,11 +1364,11 @@ button {
   line-height: 16px;
   text-align: center;
   align-self: center;
-  color: var(--colorGray);
+  color: var(--color-gray);
 }
 
 .playlists-limit-div {
-  border: 1px solid var(--colorGray);
+  border: 1px solid var(--color-gray);
   border-radius: 100%;
   width: 30px;
   height: 30px;
@@ -1378,7 +1379,7 @@ button {
   margin-bottom: 6px;
   font-size: 16px;
   line-height: 22px;
-  color: var(--colorGray);
+  color: var(--color-gray);
 }
 
 .swiper {
@@ -1393,10 +1394,10 @@ button {
   justify-content: center;
   width: 100%;
   height: 32px;
-  border: 2px solid var(--colorPrimary);
+  border: 2px solid var(--color-primary);
   background-color: transparent;
   font-family: 'MullerMedium';
-  color: var(--colorPrimary);
+  color: var(--color-primary);
   border-radius: 40px;
   margin-right: 15px;
   transition-property: color;
@@ -1439,7 +1440,7 @@ button {
   height: 26px;
   flex-shrink: 0;
   flex-grow: 0;
-  border: 1px solid var(--colorGray);
+  border: 1px solid var(--color-gray);
   border-radius: 50%;
   margin-right: 14px;
   background-repeat: no-repeat;
@@ -1455,7 +1456,7 @@ button {
 
 .playlists-card {
   width: 160px;
-  border: 1px solid var(--colorGray);
+  border: 1px solid var(--color-gray);
   flex-direction: column;
   padding: 176px 18px 16px 16px;
   position: relative;
@@ -1542,14 +1543,14 @@ button {
 .playlists-card-title {
   font-size: 16px;
   line-height: 16px;
-  color: var(--colorBlack);
+  color: var(--color-black);
   margin-bottom: 4px;
 }
 
 .playlists-card-descr {
   font-size: 12px;
   line-height: 12px;
-  color: var(--colorGray);
+  color: var(--color-gray);
 }
 
 .playlists-img-country {
@@ -1558,7 +1559,7 @@ button {
   right: 0;
   width: 24px;
   height: 20px;
-  border: 4px solid var(--colorBlack);
+  border: 4px solid var(--color-black);
 }
 
 .playlists-img-play {
@@ -1599,7 +1600,7 @@ button {
 .section-radio {
   padding-top: 60px;
   padding-bottom: 133px;
-  background-color: var(--colorLightBlack);
+  background-color: var(--color-light-black);
 }
 
 .radio-main {
@@ -1629,7 +1630,7 @@ button {
 .radio-section {
   font-size: 48px;
   line-height: 100%;
-  color: var(--colorPromo);
+  color: var(--color-promo);
   position: relative;
   padding-bottom: 27px;
   margin-bottom: 20px;
@@ -1655,7 +1656,7 @@ button {
 .radio-p1, .radio-p2 {
   font-size: 16px;
   line-height: 180%;
-  color: var(--colorWhite);
+  color: var(--color-white);
 }
 
 .radio-p2 {
@@ -1666,20 +1667,20 @@ button {
 .radio-price {
   font-size: 30px;
   line-height: 30px;
-  color: var(--colorWhite);
+  color: var(--color-white);
   margin-bottom: 30px;
 }
 
 .radio-gold {
-  color: var(--colorPromo);
+  color: var(--color-promo);
 }
 
 .radio-btn {
   position: relative;
   font-size: 20px;
   line-height: 100%;
-  color: var(--colorPromo);
-  border: 2px solid var(--colorPromo);
+  color: var(--color-promo);
+  border: 2px solid var(--color-promo);
   max-width: 300px;
   padding: 25px 13px 25px 14px;
   transition-property: color;
@@ -1707,7 +1708,7 @@ button {
 .section-about {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--colorBlack);
+  background-color: var(--color-black);
 }
 
 .about-main {
@@ -1736,14 +1737,14 @@ button {
 .about-main-title {
   font-size: 48px;
   line-height: 100%;
-  color: var(--colorWhite);
+  color: var(--color-white);
   margin-bottom: 12px;
 }
 
 .about-top-p1 {
   font-size: 20px;
   line-height: 150%;
-  color: var(--colorGray);
+  color: var(--color-gray);
   margin-bottom: 8px;
   font-family: 'MullerBold';
 }
@@ -1751,7 +1752,7 @@ button {
 .about-top-p2 {
   font-size: 20px;
   line-height: 160%;
-  color: var(--colorGray);
+  color: var(--color-gray);
   margin-bottom: 8px;
 }
 
@@ -1796,7 +1797,7 @@ button {
 .about-center-card-title {
   font-size: 20px;
   line-height: 20px;
-  color: var(--colorWhite);
+  color: var(--color-white);
   font-family: 'MullerMedium';
   margin-bottom: 8px;
 }
@@ -1804,7 +1805,7 @@ button {
 .about-center-card-descr {
   font-size: 16px;
   line-height: 24px;
-  color: var(--colorGray);
+  color: var(--color-gray);
 }
 
 .about-center-card::before {
@@ -1859,20 +1860,20 @@ button {
 .form-group {
   display: flex;
   border-radius: 30px;
-  border: 1px solid var(--colorGray);
+  border: 1px solid var(--color-gray);
   position: relative;
 }
 
 .form-group label {
-  background-color: var(--colorRed);
+  background-color: var(--color-red);
   padding: 10px 20px;
   border-radius: 20px 0px 0px 20px;
-  color: var(--colorWhite);
+  color: var(--color-white);
   width: 30%;
 }
 
 .form-group input, textarea {
-  color: var(--colorGray);
+  color: var(--color-gray);
   font-size: 20px;
   line-height: 20px;
   background-color: transparent;
@@ -1891,13 +1892,13 @@ button {
   padding-left: 30px;
   font-size: 12px;
   line-height: 12px;
-  color: var(--colorRed);
+  color: var(--color-red);
 }
 
 .form-group input, textarea::placeholder {
   font-size: 20px;
   line-height: 20px;
-  color: var(--colorGray);
+  color: var(--color-gray);
 }
 
 .js-form__title {
@@ -1905,7 +1906,7 @@ button {
   position: absolute;
   right: -18%;
   transform: rotate(90deg) translateX(44%);
-  color: var(--colorRed);
+  color: var(--color-red);
   opacity: 0.5;
 }
 
@@ -1963,11 +1964,12 @@ button {
 .about-bottom-text {
   font-size: 12px;
   line-height: 12px;
-  color: var(--colorWhite);
+  color: var(--color-white);
   font-family: 'MullerMedium';
 }
 
 .about-bottom-check-box {
+  cursor: pointer;
   overflow: hidden;
   margin-left: -1.2em;
   position: absolute;
@@ -1984,7 +1986,7 @@ button {
 }
 
 .about-bottom-check {
-  color: var(--colorGray2);
+  color: var(--color-gray2);
 }
 
 /*Footer*/
@@ -1992,7 +1994,7 @@ button {
 .section-footer {
   padding-top: 94px;
   padding-bottom: 10px;
-  background-color: var(--colorLightBlack);
+  background-color: var(--color-light-black);
 }
 
 .footer-logo {
@@ -2014,7 +2016,7 @@ button {
 .footer-right-item {
   font-size: 16px;
   line-height: 16px;
-  color: var(--colorWhite);
+  color: var(--color-white);
   margin-bottom: 20px;
   margin-right: 109px;
 }
@@ -2041,7 +2043,7 @@ button {
   padding-top: 20px;
   font-size: 16px;
   line-height: 103.34%;
-  color: var(--colorGray);
+  color: var(--color-gray);
 }
 
 /*Effects*/
@@ -2052,19 +2054,19 @@ button {
 }
 
 .header-form-container:hover .header-form-open svg path {
-  stroke: var(--colorPrimaryLight);
+  stroke: var(--color-primary-light);
 }
 
 .header-form-container:focus-visible .header-form-open svg path {
-  stroke: var(--colorPrimaryLight);
+  stroke: var(--color-primary-light);
 }
 
 .header-form-container:active .header-form-open svg path {
-  stroke: var(--colorPrimaryShade);
+  stroke: var(--color-primary-shade);
 }
 
 .header-form-open.active svg path {
-  stroke: var(--colorPrimary);
+  stroke: var(--color-primary);
 }
 
 .link-to-section {
@@ -2073,16 +2075,35 @@ button {
 }
 
 .link-to-section:hover {
-  color: var(--colorPrimary);
+  color: var(--color-primary);
 }
 
 .link-to-section:focus-visible {
-  background-color: var(--colorPrimaryLight);
-  color: var(--colorWhite);
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
 }
 
 .link-to-section:active {
-  color: var(--colorPrimaryShade);
+  color: var(--color-primary-shade);
+}
+
+.guests-bottom__item-button {
+  transition-property: color;
+  transition: .2s ease-in-out;
+  width: max-content;
+}
+
+.guests-bottom__item-button:hover {
+  color: var(--color-primary);
+}
+
+.guests-bottom__item-button:focus-visible {
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
+}
+
+.guests-bottom__item-button:active {
+  color: var(--color-primary-shade);
 }
 
 .btn-archive-path1,
@@ -2093,15 +2114,15 @@ button {
 }
 
 .btn-black-archive:hover .btn-archive-path1 {
-  stroke: var(--colorWhite);
+  stroke: var(--color-white);
 }
 
 .btn-black-archive:hover .btn-archive-path2 {
-  stroke: var(--colorWhite);
+  stroke: var(--color-white);
 }
 
 .btn-black-archive:hover .btn-archive-path3 {
-  stroke: var(--colorWhite);
+  stroke: var(--color-white);
 }
 
 .btn {
@@ -2110,16 +2131,16 @@ button {
 }
 
 .btn:hover {
-  background-color: var(--colorPrimaryLight);
+  background-color: var(--color-primary-light);
 }
 
 .btn:focus-visible {
-  background-color: var(--colorPrimaryLight);
-  outline: 2px solid var(--colorPrimaryShade);
+  background-color: var(--color-primary-light);
+  outline: 2px solid var(--color-primary-shade);
 }
 
 .btn:active {
-  background-color: var(--colorPrimaryShade);
+  background-color: var(--color-primary-shade);
 }
 
 .btn-transparent {
@@ -2128,19 +2149,19 @@ button {
 }
 
 .btn-transparent:hover {
-  background-color: var(--colorPrimary);
-  color: var(--colorWhite);
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .btn-transparent:focus-visible {
-  background-color: var(--colorPrimaryLight);
-  color: var(--colorWhite);
-  outline: 1px solid var(--colorPrimary);
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
+  outline: 1px solid var(--color-primary);
 }
 
 .btn-transparent:active {
-  background-color: var(--colorPrimaryShade);
-  color: var(--colorWhite);
+  background-color: var(--color-primary-shade);
+  color: var(--color-white);
 }
 
 .btn-black {
@@ -2149,19 +2170,19 @@ button {
 }
 
 .btn-black:hover {
-  color: var(--colorWhite);
-  background-color: var(--colorBlack);
+  color: var(--color-white);
+  background-color: var(--color-black);
 }
 
 
 .btn-black:focus-visible {
-  color: var(--colorBlack);
-  background-color: var(--colorPrimaryLight);
+  color: var(--color-black);
+  background-color: var(--color-primary-light);
 }
 
 .btn-black:active {
-  color: var(--colorWhite);
-  background-color: var(--colorPrimaryShade);
+  color: var(--color-white);
+  background-color: var(--color-primary-shade);
 }
 
 .guests-social-item svg path, .footer-social-item svg path {
@@ -2170,54 +2191,54 @@ button {
 }
 
 .guests-social-item:hover svg path, .footer-social-item:hover svg path {
-  fill: var(--colorPrimary);
+  fill: var(--color-primary);
 }
 
 .guests-social-item:focus-visible svg path, .footer-social-item:focus-visible svg path {
-  fill: var(--colorPrimaryLight);
+  fill: var(--color-primary-light);
 }
 
 .guests-social-item:active svg path, .footer-social-item:active svg path {
-  fill: var(--colorPrimaryShade);
+  fill: var(--color-primary-shade);
 }
 
 .radio-btn:hover {
-  background-color: var(--colorPromo);
-  color: var(--colorBlack);
+  background-color: var(--color-promo);
+  color: var(--color-black);
 }
 
 .radio-btn:hover .radio-btn-icon-path1 {
-  fill: var(--colorBlack);
+  fill: var(--color-black);
 }
 
 .radio-btn:hover .radio-btn-icon-path2 {
-  fill: var(--colorPromo);
+  fill: var(--color-promo);
 }
 
 .radio-btn:focus-visible {
-  background-color: var(--colorPromoShade);
-  color: var(--colorBlack);
+  background-color: var(--color-promo-shade);
+  color: var(--color-black);
 }
 
 .radio-btn:active {
-  background-color: var(--colorPromoShade);
-  color: var(--colorBlack);
+  background-color: var(--color-promo-shade);
+  color: var(--color-black);
 }
 
 .radio-btn:focus-visible .radio-btn-icon-path1 {
-  fill: var(--colorPromo);
+  fill: var(--color-promo);
 }
 
 .radio-btn:focus-visible .radio-btn-icon-path2 {
-  fill: var(--colorBlack);
+  fill: var(--color-black);
 }
 
 .radio-btn:active .radio-btn-icon-path1 {
-  fill: var(--colorBlack);
+  fill: var(--color-black);
 }
 
 .radio-btn:active .radio-btn-icon-path2 {
-  fill: var(--colorPromoShade);
+  fill: var(--color-promo-shade);
 }
 
 .podcasts-card-img svg {
@@ -2236,27 +2257,27 @@ button {
 }
 
 .podcasts-card-img:hover circle {
-  stroke: var(--colorPrimary);
+  stroke: var(--color-primary);
 }
 
 .podcasts-card-img:hover path {
-  fill: var(--colorPrimary);
+  fill: var(--color-primary);
 }
 
 .podcasts-card-img:focus-visible circle {
-  stroke: var(--colorPrimaryLight);
+  stroke: var(--color-primary-light);
 }
 
 .podcasts-card-img:focus-visible path {
-  fill: var(--colorPrimaryLight);
+  fill: var(--color-primary-light);
 }
 
 .podcasts-card-img:active svg {
-  fill: var(--colorPrimaryShade);
+  fill: var(--color-primary-shade);
 }
 
 .podcasts-card-img:active path {
-  fill: var(--colorWhite);
+  fill: var(--color-white);
 }
 
 .playlists-card {
@@ -2270,12 +2291,12 @@ button {
 }
 
 .playlists-card:hover {
-  background-color: var(--colorPrimary);
+  background-color: var(--color-primary);
 }
 
 .playlists-card:hover h3,
 .playlists-card:hover span {
-  color: var(--colorWhite);
+  color: var(--color-white);
 }
 
 .playlists-card:hover::after {
@@ -2290,12 +2311,12 @@ button {
 }
 
 .playlists-card:focus-visible {
-  background-color: var(--colorPrimaryLight);
+  background-color: var(--color-primary-light);
 }
 
 .playlists-card:focus-visible h3,
 .playlists-card:focus-visible span {
-  color: var(--colorBlack);
+  color: var(--color-black);
 }
 
 .playlists-card:focus-visible::after {
@@ -2310,12 +2331,12 @@ button {
 }
 
 .playlists-card:active {
-  background-color: var(--colorPrimaryShade);
+  background-color: var(--color-primary-shade);
 }
 
 .playlists-card:active h3,
 .playlists-card:active span {
-  color: var(--colorWhite);
+  color: var(--color-white);
 }
 
 .playlists-card:active::after {
@@ -2335,43 +2356,43 @@ button {
 }
 
 .header-play-img:hover svg path {
-  fill: var(--colorPrimary);
+  fill: var(--color-primary);
 }
 
 .header-play-img:focus-visible svg path {
-  fill: var(--colorPrimaryLight);
+  fill: var(--color-primary-light);
 }
 
 .header-play-img:active svg path {
-  fill: var(--colorPrimaryShade);
+  fill: var(--color-primary-shade);
 }
 
 .podcasts-bottom-item:hover .podcasts-bottom-img path {
-  fill: var(--colorPrimary);
+  fill: var(--color-primary);
 }
 
 .podcasts-bottom-item:hover .podcasts-bottom-numb {
-  color: var(--colorPrimary);
+  color: var(--color-primary);
 }
 
 .podcasts-bottom-item:focus-visible .podcasts-bottom-img path {
-  fill: var(--colorWhite);
+  fill: var(--color-white);
 }
 
 .podcasts-bottom-item:focus-visible {
-  background-color: var(--colorPrimaryLight);
+  background-color: var(--color-primary-light);
 }
 
 .podcasts-bottom-item:focus-visible .podcasts-bottom-numb {
-  color: var(--colorWhite);
+  color: var(--color-white);
 }
 
 .podcasts-bottom-item:active .podcasts-bottom-img path {
-  fill: var(--colorPrimaryShade);
+  fill: var(--color-primary-shade);
 }
 
 .podcasts-bottom-item:active .podcasts-bottom-img path {
-  fill-rule: var(--colorPrimaryShade);
+  fill-rule: var(--color-primary-shade);
 }
 
 .podcasts-bottom-item:active .podcasts-bottom-img-opacity {
@@ -2379,29 +2400,29 @@ button {
 }
 
 .podcasts-bottom-item:active .podcasts-bottom-numb {
-  color: var(--colorPrimaryShade);
+  color: var(--color-primary-shade);
 }
 
 .hero-descr-link:hover {
-  border-bottom: 1px solid var(--colorPrimary);
+  border-bottom: 1px solid var(--color-primary);
 }
 
 .hero-descr-link:focus-visible {
-  background-color: var(--colorPrimaryLight);
-  color: var(--colorWhite);
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
 }
 
 .hero-descr-link:active {
-  border-bottom: 1px solid var(--colorPrimaryShade);
-  color: var(--colorPrimaryShade);
+  border-bottom: 1px solid var(--color-primary-shade);
+  color: var(--color-primary-shade);
 }
 
 .broadcasts-card:hover .broadcasts-more {
-  color: var(--colorPrimary);
+  color: var(--color-primary);
 }
 
 .broadcasts-card:hover .broadcasts-more .broadcasts-more-arrow path {
-  fill: var(--colorPrimary);
+  fill: var(--color-primary);
 }
 
 .broadcasts-card:hover::before {
@@ -2409,29 +2430,29 @@ button {
 }
 
 .broadcasts-card:focus-visible .broadcasts-more {
-  background-color: var(--colorPrimaryLight);
+  background-color: var(--color-primary-light);
 }
 
 .broadcasts-card:focus-visible .broadcasts-more {
-  color: var(--colorWhite);
+  color: var(--color-white);
 }
 
 .broadcasts-card:focus-visible {
-  outline: 1px solid var(--colorPrimary);
+  outline: 1px solid var(--color-primary);
   outline-offset: 7px;
 }
 
 
 .broadcasts-card:focus-visible .broadcasts-more .broadcasts-more-arrow path {
-  fill: var(--colorWhite);
+  fill: var(--color-white);
 }
 
 .broadcasts-card:active .broadcasts-more {
-  color: var(--colorPrimaryShade);
+  color: var(--color-primary-shade);
 }
 
 .broadcasts-card:active .broadcasts-more .broadcasts-more-arrow path {
-  fill: var(--colorPrimaryShade);
+  fill: var(--color-primary-shade);
 }
 
 .broadcasts-card:active::before {
@@ -2439,19 +2460,19 @@ button {
 }
 
 .playlists-radio:not(:disabled):not(:checked)+label:hover::before {
-  border-color: var(--colorPrimary);
+  border-color: var(--color-primary);
 }
 
 .playlists-radio:focus-visible+label::before {
-  border-color: var(--colorPrimary);
-  background-color: var(--colorShadeGray);
+  border-color: var(--color-primary);
+  background-color: var(--color-shade-gray);
 }
 
 
 
 .playlists-radio:checked+label::before {
-  border-color: var(--colorPrimary);
-  background-color: var(--colorPrimary);
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
   background-image: url("../img/checked.svg");
 }
 
@@ -2462,7 +2483,7 @@ button {
 .choices {
   transition-property: border-color, color;
   transition: 0.2s ease-in-out;
-  border: 1px solid var(--colorPrimary);
+  border: 1px solid var(--color-primary);
   border-radius: 10px;
   border-color: transparent;
 }
@@ -2472,16 +2493,16 @@ button {
 }
 
 .is-open:hover .choices__inner {
-  background-color: var(--colorLight);
+  background-color: var(--color-light);
 }
 
 .choices:not(.is-open):focus-visible {
-  background-color: var(--colorLight);
-  border-color: var(--colorPrimary);
+  background-color: var(--color-light);
+  border-color: var(--color-primary);
 }
 
 .choices__inner:active {
-  background-color: var(--colorShadeGray);
+  background-color: var(--color-shade-gray);
 }
 
 .choices__item {
@@ -2490,18 +2511,18 @@ button {
 }
 
 .choices__item.choices__item--choice.choices__item--selectable:hover {
-  color: var(--colorBlack);
+  color: var(--color-black);
   background-color: rgba(230, 232, 236, 0.4);
 }
 
 .choices__item:not(:hover).choices__item--choice.choices__item--selectable.is-highlighted {
-  color: var(--colorBlack);
-  background-color: var(--colorPrimaryLight);
+  color: var(--color-black);
+  background-color: var(--color-primary-light);
 }
 
 
 .choices__item.choices__item--choice.choices__item--selectable:active {
-  background-color: var(--colorLight);
+  background-color: var(--color-light);
 }
 
 .form-group:hover {
@@ -2510,28 +2531,28 @@ button {
 
 .form-group:focus-visible {
   background-color: rgba(230, 232, 236, 0.1);
-  border: 1px solid var(--colorPrimaryLight);
+  border: 1px solid var(--color-primary-light);
 }
 
 .form-group:active {
   background-color: transparent;
-  border-color: var(--colorWhite);
+  border-color: var(--color-white);
 }
 
 .header-bottom-ether-button:active svg circle {
-  fill: var(--colorPrimaryShade);
+  fill: var(--color-primary-shade);
 }
 
 .header-bottom-ether-button-closed:active svg circle {
-  fill: var(--colorPrimaryShade);
+  fill: var(--color-primary-shade);
 }
 
 .swiper-slide:active {
-  background-color: var(--colorPrimary);
+  background-color: var(--color-primary);
 }
 
 .swiper-slide:active .swiper-slide-item {
-  color: var(--colorWhite);
+  color: var(--color-white);
 }
 
 
@@ -2578,7 +2599,7 @@ button {
     padding-top: 93px;
   }
 
-  .guests-bottom-item-button {
+  .guests-bottom__item-button {
     margin-right: 33px;
   }
 
@@ -2773,7 +2794,7 @@ button {
     width: 100%;
     flex-direction: column;
     padding-top: 25px;
-    border-top: 1px solid var(--colorShadeGray);
+    border-top: 1px solid var(--color-shade-gray);
   }
 
   .playlists-right {
@@ -2940,7 +2961,7 @@ button {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--colorShadeGray);
+    background-color: var(--color-shade-gray);
     padding: 28px 28px 28px 114px;
     width: 100%;
     opacity: 0;
@@ -3051,7 +3072,7 @@ button {
   }
 
   .broadcasts-left-last2 {
-    border-top: 1px solid var(--colorLight);
+    border-top: 1px solid var(--color-light);
     display: flex;
     justify-content: center;
     padding-top: 30px;
@@ -3259,7 +3280,7 @@ button {
     height: 231px;
   }
 
-  .guests-bottom-item-button {
+  .guests-bottom__item-button {
     margin-bottom: 27px;
   }
 
@@ -3312,7 +3333,7 @@ button {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--colorWhite);
+    background-color: var(--color-white);
     min-height: 240px;
     padding: 30px 30px 69px 32px;
     width: 100%;
@@ -3395,7 +3416,7 @@ button {
     font-size: 16px;
     line-height: 16px;
     font-family: 'MullerMedium';
-    color: var(--colorPrimary);
+    color: var(--color-primary);
   }
 
   .header-play-main-div.active {
@@ -3458,7 +3479,7 @@ button {
 
   .header-play-main:not(:last-child) {
     padding-right: 37px;
-    border-right: 1px solid var(--colorShadeGray);
+    border-right: 1px solid var(--color-shade-gray);
   }
 
   .header-play-main:last-child {
@@ -3797,7 +3818,7 @@ button {
     padding-bottom: 13px;
   }
 
-  .guests-bottom-item-button {
+  .guests-bottom__item-button {
     font-size: 14px;
     line-height: 110%;
   }
@@ -3858,7 +3879,7 @@ button {
 
   .playlists-card {
     width: 113px;
-    border: 1px solid var(--colorGray);
+    border: 1px solid var(--color-gray);
     flex-direction: column;
     padding: 122px 8px 8px 9px;
     position: relative;
@@ -4045,7 +4066,7 @@ button {
     line-height: 103%;
   }
 
-  .guests-bottom-item-button {
+  .guests-bottom__item-button {
     margin-right: 0;
     margin-bottom: 30px;
     max-width: 100px;
