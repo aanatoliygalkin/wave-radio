@@ -3268,12 +3268,16 @@ button {
   }
 
   .footer-social {
+    padding-right: 12px;
     align-self: center;
   }
 
+  .footer-social-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
   .footer-social-item {
-    margin-right: 24px;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
   }
 
   .footer-decoration-main {
@@ -3314,7 +3318,7 @@ button {
     padding-top: 42px;
   }
   .section-footer {
-    padding-top: 88px;
+    padding-top: 92px;
   }
 }
 
@@ -3326,6 +3330,10 @@ button {
 
   .playlists-slider {
     display: block;
+  }
+
+  .footer-social {
+    padding-left: 20px;
   }
 
   .header-nav-bottom {
@@ -3522,7 +3530,7 @@ button {
   }
 
   .hero-main {
-    padding-top: 30px;
+    padding-top: 25px;
     min-height: 257px;
   }
 
@@ -3696,6 +3704,7 @@ button {
   .broadcasts-card {
     width: 113px;
     padding: 60px 12px 12px 10px;
+    min-height: 149px;
   }
 
   .broadcasts-card::before {
@@ -3735,9 +3744,11 @@ button {
   .broadcasts-descr {
     font-size: 9px;
     line-height: 9px;
+    margin-bottom: 0px;
   }
 
   .broadcasts-more {
+    margin-top: auto;
     font-size: 12px;
     line-height: 12px;
     max-width: 91px;
@@ -3767,7 +3778,7 @@ button {
   }
 
   .section-broadcasts {
-    padding-bottom: 15px;
+    padding-bottom: 0px;
   }
 
   .broadcasts-left-last2 {
@@ -3875,6 +3886,10 @@ button {
 
   .about-top-background {
     display: none;
+  }
+
+  .about-bottom-div {
+    margin-bottom: 36px;
   }
 
   .playlists-left {
@@ -4000,6 +4015,7 @@ button {
     font-size: 14px;
     line-height: 18px;
     max-width: 100px;
+    margin-bottom: 5px;
   }
 
   .about-center-card-descr {
@@ -4008,7 +4024,7 @@ button {
   }
 
   .about-top-div {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .about-bottom-first textarea::placeholder {
@@ -4044,11 +4060,11 @@ button {
   }
 
   .js-form {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 
   .section-about {
-    padding-bottom: 45px;
+    padding-bottom: 50px;
     padding-top: 54px;
   }
 
