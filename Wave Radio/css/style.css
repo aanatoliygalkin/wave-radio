@@ -1053,7 +1053,7 @@ button {
 
 .section-guests {
   padding-top: 60px;
-  padding-bottom: 100px;
+  padding-bottom: 105px;
   background-color: var(--color-black);
 }
 
@@ -1087,7 +1087,7 @@ button {
   padding-right: 3px;
 }
 
-.guests-item {
+.guests-top {
   cursor: pointer;
   transition-property: color;
   transition: 0.2s ease-in-out;
@@ -1177,12 +1177,12 @@ button {
   stroke: var(--color-primary-light);
 }
 
-.guests-item:active .guests-btn {
+.guests-top:active .guests-btn {
   background-color: var(--color-primary-light);
   border-color: var(--color-primary-light);
 }
 
-.guests-item:active .guests-btn svg path {
+.guests-top:active .guests-btn svg path {
   stroke: var(--color-white);
 }
 
@@ -1215,7 +1215,7 @@ button {
 }
 
 .guests-bottom {
-  padding-top: 30px;
+  padding-top: 25px;
   line-height: 2;
 }
 
@@ -1290,11 +1290,16 @@ button {
   height: 150px;
 }
 
-.guests-bottom__item-button {
+.guests-bottom-main__li {
   margin-bottom: 14px;
 }
 
-.guests-bottom__item-button {
+.guests-bottom-main__li {
+  width: max-content;
+  height: 17px;
+}
+
+.guests-bottom-main__button {
   text-align: left;
   padding: 0;
   border: none;
@@ -2079,6 +2084,7 @@ button {
 }
 
 .link-to-section:focus-visible {
+  padding: 5px 10px;
   background-color: var(--color-primary-light);
   color: var(--color-white);
 }
@@ -2087,22 +2093,22 @@ button {
   color: var(--color-primary-shade);
 }
 
-.guests-bottom__item-button {
+.guests-bottom-main__button {
   transition-property: color;
   transition: .2s ease-in-out;
   width: max-content;
 }
 
-.guests-bottom__item-button:hover {
+.guests-bottom-main__button:hover {
   color: var(--color-primary);
 }
 
-.guests-bottom__item-button:focus-visible {
+.guests-bottom-main__button:focus-visible {
   background-color: var(--color-primary-light);
   color: var(--color-white);
 }
 
-.guests-bottom__item-button:active {
+.guests-bottom-main__button:active {
   color: var(--color-primary-shade);
 }
 
@@ -2392,7 +2398,7 @@ button {
 }
 
 .podcasts-bottom-item:active .podcasts-bottom-img path {
-  fill-rule: var(--color-primary-shade);
+  fill: var(--color-primary-shade);
 }
 
 .podcasts-bottom-item:active .podcasts-bottom-img-opacity {
@@ -2599,7 +2605,7 @@ button {
     padding-top: 93px;
   }
 
-  .guests-bottom__item-button {
+  .guests-bottom-main__li {
     margin-right: 33px;
   }
 
@@ -2736,7 +2742,7 @@ button {
 
   .section-guests {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 100px;
   }
 
   .guests-descr {
@@ -2926,7 +2932,7 @@ button {
   }
 
   .section-guests {
-    padding-bottom: 88px;
+    padding-bottom: 95px;
   }
 
   .section-about {
@@ -2939,6 +2945,7 @@ button {
   .container {
     max-width: 540px;
   }
+  
 
   .header-menu {
     display: block;
@@ -3288,7 +3295,7 @@ button {
     height: 231px;
   }
 
-  .guests-bottom__item-button {
+  .guests-bottom-main__button {
     margin-bottom: 27px;
   }
 
@@ -3297,7 +3304,7 @@ button {
   }
 
   .section-guests {
-    padding-bottom: 104px;
+    padding-bottom: 110px;
   }
 
   .footer-logo {
@@ -3319,6 +3326,9 @@ button {
   }
   .section-footer {
     padding-top: 92px;
+  }
+  .guests-bottom-main__li {
+    margin-bottom: 28px;
   }
 }
 
@@ -3798,7 +3808,7 @@ button {
   }
 
   .section-guests {
-    padding-top: 54px;
+    padding-top: 55px;
   }
 
   .guests-before-descr {
@@ -3833,7 +3843,7 @@ button {
     padding-bottom: 13px;
   }
 
-  .guests-bottom__item-button {
+  .guests-bottom-main__button {
     font-size: 14px;
     line-height: 110%;
   }
@@ -3873,7 +3883,7 @@ button {
   }
 
   .section-guests {
-    padding-bottom: 62px;
+    padding-bottom: 68px;
   }
 
   .section-playlists {
@@ -4086,11 +4096,15 @@ button {
     line-height: 103%;
   }
 
-  .guests-bottom__item-button {
+  .guests-bottom-main__li {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 42px;
     max-width: 100px;
     margin-right: 43px;
+  }
+
+  .guests-bottom-main__button {
+    max-width: 100px;
   }
 
   .guests-bottom-main {
@@ -4099,7 +4113,7 @@ button {
   }
 
   .guests-bottom {
-    padding-top: 19px;
+    padding-top: 15px;
   }
 
   .footer-right {
