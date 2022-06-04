@@ -1035,10 +1035,13 @@ button {
 }
 
 .choices__inner {
+  display: flex;
   border: none;
   padding: 12px 15px 12px 12px;
   transition-property: color;
   transition: 0.2s ease-in-out;
+  justify-content: center;
+  align-items: center;
 }
 
 .choices[data-type*=select-one] .choices__inner {
@@ -1191,25 +1194,25 @@ button {
 }
 
 
-.guests-top.ui-state--active {
+.guests-top.ui-state-active {
   border-color: var(--color-primary-light);
 }
 
-.guests-top.ui-state--active .guests-btn {
+.guests-top.ui-state-active .guests-btn {
   transform: rotate(180deg);
   background-color: transparent;
   border-color: var(--color-gray);
 }
 
-.guests-top.ui-state--active .guests-btn svg path {
+.guests-top.ui-state-active .guests-btn svg path {
   stroke: var(--color-gray);
 }
 
-.guests-top.ui-state--active .guests-top__question {
+.guests-top.ui-state-active .guests-top__question {
   color: var(--color-white);
 }
 
-.guests-top.ui-state--active+.guests-bottom {
+.guests-top.ui-state-active+.guests-bottom {
   position: relative;
   z-index: 2;
 }
@@ -1878,6 +1881,7 @@ button {
 }
 
 .form-group input, textarea {
+  font-family: 'MullerRegular';
   color: var(--color-gray);
   font-size: 20px;
   line-height: 20px;
@@ -2298,6 +2302,7 @@ button {
 
 .playlists-card:hover {
   background-color: var(--color-primary);
+  cursor: pointer;
 }
 
 .playlists-card:hover h3,
@@ -2394,7 +2399,7 @@ button {
 }
 
 .podcasts-bottom-item:active .podcasts-bottom-img path {
-  fill: var(--color-primary-shade);
+  fill-rule: var(--color-primary-shade);
 }
 
 .podcasts-bottom-item:active .podcasts-bottom-img path {
