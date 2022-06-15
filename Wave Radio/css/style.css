@@ -2083,19 +2083,39 @@ button {
 }
 
 .link-to-section {
+  position: relative;
   transition-property: color;
   transition: .2s ease-in-out;
+  z-index: 0;
+  width: max-content;
 }
 
 .link-to-section:hover {
   color: var(--color-primary);
 }
 
-.link-to-section:focus-visible {
-  padding: 5px 10px;
+.link-to-section::before {
+  position: absolute;
+  content: "";
+  width: calc(100% + 16px);
+  height: calc(100% + 6px);
+  opacity: 0;
+  left: -8px;
+  top: -3px;
   background-color: var(--color-primary-light);
-  color: var(--color-white);
+  z-index: -1;
+  transition-property: opacity;
+  transition: 0.2s ease-in-out;
 }
+
+.link-to-section:focus-visible::before{
+opacity: 1;
+}
+
+.link-to-section:focus-visible{
+  color: var(--color-white);
+  }
+
 
 .link-to-section:active {
   color: var(--color-primary-shade);
