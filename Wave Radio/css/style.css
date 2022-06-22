@@ -1880,7 +1880,7 @@ button {
   width: 30%;
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
   font-family: 'MullerRegular';
   color: var(--color-gray);
@@ -1941,7 +1941,7 @@ button {
   margin-right: 30px;
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
   border: none;
 }
@@ -2108,13 +2108,13 @@ button {
   transition: 0.2s ease-in-out;
 }
 
-.link-to-section:focus-visible::before{
-opacity: 1;
+.link-to-section:focus-visible::before {
+  opacity: 1;
 }
 
-.link-to-section:focus-visible{
+.link-to-section:focus-visible {
   color: var(--color-white);
-  }
+}
 
 
 .link-to-section:active {
@@ -2618,6 +2618,7 @@ opacity: 1;
   .section-radio {
     padding-top: 95px;
   }
+
   .section-footer {
     padding-top: 87px;
   }
@@ -2974,7 +2975,7 @@ opacity: 1;
   .container {
     max-width: 540px;
   }
-  
+
 
   .header-menu {
     display: block;
@@ -3313,7 +3314,7 @@ opacity: 1;
   }
 
   .footer-social-item {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .footer-decoration-main {
@@ -3353,9 +3354,11 @@ opacity: 1;
   .footer-decoration-main {
     padding-top: 42px;
   }
+
   .section-footer {
     padding-top: 92px;
   }
+
   .guests-bottom-main__li {
     margin-bottom: 28px;
   }
@@ -4071,7 +4074,7 @@ opacity: 1;
     line-height: 16px;
   }
 
-  .form-group input, 
+  .form-group input,
   .form-group textarea {
     font-size: 16px;
     line-height: 16px;

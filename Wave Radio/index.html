@@ -981,18 +981,18 @@
         <p class="guests-before-descr">У нас бывают:</p>
         <p class="guests-descr">Блогеры, арт-критики и деятели искусства, музыканты, молодые учёные и люди науки,
           историки, филологи и много других интересных гостей!</p>
-        <div class="guests-main flex" tabindex="-1">
-          <ul class="guests-list" id="accordion">
+        <div class="guests-main flex">
+          <ul class="guests-list" id="accordion" aria-label="Список гостей по профессии">
             <li class="guests-item">
-              <div class="guests-top" tabindex="0">
+              <button class="guests-top">
                 <h3 class="guests-top__question">Блогеры</h3>
                 <button class="guests-btn">
                   <svg width="20" height="13" viewbox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 2L10 10L18 2" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
                   </svg>
                 </button>
-              </div>
-              <div class="guests-bottom" tabindex="-1">
+              </button>
+              <div class="guests-bottom">
                 <ul class="guests-bottom-main flex">
                   <li class="guests-bottom-main__li" data-path="guest1"><button
                       class="guests-bottom-main__button">Сергей Денисов</button></li>
@@ -1031,15 +1031,15 @@
               </div>
             </li>
             <li class="guests-item">
-              <div class="guests-top" tabindex="0">
+              <button class="guests-top">
                 <h3 class="guests-top__question">Арт-критики</h3>
                 <button class="guests-btn">
                   <svg width="20" height="13" viewbox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 2L10 10L18 2" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
                   </svg>
                 </button>
-              </div>
-              <div class="guests-bottom" tabindex="-1">
+              </button>
+              <div class="guests-bottom">
                 <ul class="guests-bottom-main flex">
                   <li class="guests-bottom-main__li" data-path="guest1"><button
                       class="guests-bottom-main__button">Сергей Денисов</button></li>
@@ -1078,15 +1078,15 @@
               </div>
             </li>
             <li class="guests-item">
-              <div class="guests-top" tabindex="0">
+              <button class="guests-top">
                 <h3 class="guests-top__question">Художники</h3>
                 <button class="guests-btn">
                   <svg width="20" height="13" viewbox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 2L10 10L18 2" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
                   </svg>
                 </button>
-              </div>
-              <div class="guests-bottom" tabindex="-1">
+              </button>
+              <div class="guests-bottom">
                 <ul class="guests-bottom-main flex">
                   <li class="guests-bottom-main__li" data-path="guest1"><button
                       class="guests-bottom-main__button">Сергей Денисов</button></li>
@@ -1125,15 +1125,15 @@
               </div>
             </li>
             <li class="guests-item">
-              <div class="guests-top" tabindex="0">
+              <button class="guests-top">
                 <h3 class="guests-top__question">Люди науки</h3>
                 <button class="guests-btn">
                   <svg width="20" height="13" viewbox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 2L10 10L18 2" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
                   </svg>
                 </button>
-              </div>
-              <div class="guests-bottom" tabindex="-1">
+              </button>
+              <div class="guests-bottom">
                 <ul class="guests-bottom-main flex">
                   <li class="guests-bottom-main__li" data-path="guest1"><button
                       class="guests-bottom-main__button">Сергей Денисов</button></li>
@@ -1172,15 +1172,15 @@
               </div>
             </li>
             <li class="guests-item">
-              <div class="guests-top" tabindex="0">
+              <button class="guests-top">
                 <h3 class="guests-top__question">Историки</h3>
                 <button class="guests-btn">
                   <svg width="20" height="13" viewbox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 2L10 10L18 2" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
                   </svg>
                 </button>
-              </div>
-              <div class="guests-bottom" tabindex="-1">
+              </button>
+              <div class="guests-bottom">
                 <ul class="guests-bottom-main flex">
                   <li class="guests-bottom-main__li" data-path="guest1"><button
                       class="guests-bottom-main__button">Сергей Денисов</button></li>
@@ -1219,15 +1219,15 @@
               </div>
             </li>
             <li class="guests-item">
-              <div class="guests-top" tabindex="0">
+              <button class="guests-top">
                 <h3 class="guests-top__question">Филологи</h3>
                 <button class="guests-btn">
                   <svg width="20" height="13" viewbox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 2L10 10L18 2" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
                   </svg>
                 </button>
-              </div>
-              <div class="guests-bottom" tabindex="-1">
+              </button>
+              <div class="guests-bottom">
                 <ul class="guests-bottom-main flex">
                   <li class="guests-bottom-main__li" data-path="guest1"><button
                       class="guests-bottom-main__button">Сергей Денисов</button></li>
@@ -2234,20 +2234,20 @@
     })
   </script>
   <script>
-const anchors = document.querySelectorAll('a[href*="#"]')
+    const anchors = document.querySelectorAll('a[href*="#"]')
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    const blockID = anchor.getAttribute('href').substr(1)
-    
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
-}
+    for (let anchor of anchors) {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+
+        const blockID = anchor.getAttribute('href').substr(1)
+
+        document.getElementById(blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      })
+    }
   </script>
   <script>
     document.querySelector(".header-form-open").addEventListener("click", function () {
