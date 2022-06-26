@@ -1091,6 +1091,9 @@ button {
 }
 
 .guests-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   cursor: pointer;
   transition-property: color;
   transition: 0.2s ease-in-out;
@@ -1148,6 +1151,7 @@ button {
   font-family: 'MullerMedium';
   margin-right: auto;
   transition: color .2s ease-in-out;
+  text-align: left;
   font-size: 20px;
   line-height: 20px;
   color: var(--color-white);
