@@ -7,8 +7,6 @@
   <title>Wave Radio</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.svg">
   <link rel="stylesheet" href="css/normalize.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
@@ -2202,17 +2200,6 @@
     </div>
   </footer>
   <script>
-    $(function () {
-      $(".guests-list").accordion({
-        icons: false,
-        heightStyle: "content",
-        collapsible: true,
-        active: false
-      });
-
-    });
-  </script>
-  <script>
     document.querySelectorAll('.guests-bottom-main__li').forEach(function (tabsBtn) {
       tabsBtn.addEventListener('click', function (event) {
         document.querySelectorAll('.guests-bottom-main__li').forEach(function (el) {
@@ -2300,6 +2287,25 @@
     for (let el of els) {
       el.style.width = 'max-content';
     }
+  </script>
+
+<script>
+  var acc = document.getElementsByClassName("guests-top");
+  var i;
+  var p;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+
+  }
   </script>
 
 </body>

@@ -1092,8 +1092,6 @@ button {
 
 .guests-top {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   cursor: pointer;
   transition-property: color;
   transition: 0.2s ease-in-out;
@@ -1222,8 +1220,10 @@ button {
 }
 
 .guests-bottom {
-  padding-top: 25px;
   line-height: 2;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
 }
 
 .guests-card {
@@ -1290,11 +1290,13 @@ button {
 }
 
 .guests-bottom-main {
+  padding-top: 25px;
+  padding-bottom: 25px;
   justify-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
   column-count: 4;
-  height: 150px;
+  height: 175px;
 }
 
 .guests-bottom-main__li {
